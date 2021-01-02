@@ -1,0 +1,258 @@
+/*
+COLOR PALETTE
+https://coolors.co/011627-ff0022-41ead4-fdfffc-b91372
+#011627 - RICH BLACK FOGRA 29
+#F7FFF7 - WHITE
+#d6ad6f - LIGHT ORANGE
+#2980B9 - LIGHT BLUE
+
+/* GLOBAL STYLES
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: #011627 !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #011627;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 85px;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: 6px 3px 5px #011627;
+}
+h4 {
+  text-shadow: 6px 3px 5px #011627
+}
+h2, h4 {
+  font-size: 85px;
+}
+h1, h2, h4 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+h4 {
+  color: #F7FFF7 !important;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px solid #011627;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+/* PROFILE AND JAVASCRIPT DROPDOWN
+------------------------------------*/
+header {
+  background-image: url(../images/Layer62.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  color: #F7FFF7;
+}
+.dropbtn {
+  background-color: #011627;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/* CONTAINER HOLDING IMAGE AND TEXT
+------------------------------------*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* BOTTOM LEFT TEXT
+------------------------------------*/
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+/* TOP LEFT TEXT
+------------------------------------*/
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+/* TOP RIGHT TEXT
+------------------------------------*/
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+/* BOTTOM RIGHT TEXT
+------------------------------------*/
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+/* CENTERED TEXT
+------------------------------------*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* UPCOMING SERVICES
+------------------------------------*/
+.upcoming-services {
+  background-image: url(../images/Layer27.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.upcoming-services a {
+  color: #011627;
+}
+.upcoming-services .btn {
+  color: #F7FFF7;
+  background: #011627;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.upcoming-services .btn:hover {
+  background-color: #2980B9;
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+/* OUR MISSION AND VALUES
+------------------------------------*/
+.work-experience {
+  background-image: url(../images/Layer44.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+/* EDUCATION
+------------------------------------*/
+.education {
+  background-image: url(../images/Layer70.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.education p {
+  width: 60%;
+}
+/* JOIN US!
+------------------------------------*/
+footer {
+  background-image: url(../images/Layer71.png);
+  background-size: cover;
+  background-position: top;
+  color: #F7FFF7;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+  color: #F7FFF7;
+}
+/* RESPONSIVE
+------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
